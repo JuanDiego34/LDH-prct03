@@ -1,0 +1,43 @@
+/**
+ * @file TOPTWEvaluator.java
+ * @brief Contiene la implementación de la clase TOPTWEvaluator, que se encarga de evaluar la aptitud de una solución TOPTW.
+ */
+
+package top;
+
+/**
+ * @class TOPTWEvaluator
+ * @brief Clase que se encarga de evaluar la aptitud de una solución en el problema TOPTW.
+ */
+public class TOPTWEvaluator {
+    public static double NO_EVALUATED = -1.0;
+
+    public void evaluate(TOPTWSolution solution) {
+        /*CumulativeCVRP problem = solution.getProblem();
+        double objectiveFunctionValue = 0.0;
+        for (int i = 0; i < solution.getIndexDepot().size(); i++) {
+            double cumulative = 0;
+            int depot = solution.getAnIndexDepot(i);
+            int actual = depot;
+            actual = solution.getSuccessor(actual);
+            cumulative += problem.getDistanceMatrix(0, actual);
+            objectiveFunctionValue += problem.getDistanceMatrix(0, actual);
+            System.out.println("Desde " + 0 + " a " + actual + " = " + cumulative);
+            while (actual != depot) {
+                int ant = actual;
+                actual = solution.getSuccessor(actual);
+                if (actual != depot) {
+                    cumulative += problem.getDistanceMatrix(ant, actual);
+                    objectiveFunctionValue += cumulative;
+                    System.out.println("Desde " + ant + " a " + actual + " = " + cumulative);
+                } else {
+                    cumulative += problem.getDistanceMatrix(ant, 0);
+                    objectiveFunctionValue += cumulative;
+                    System.out.println("Desde " + ant + " a " + 0 + " = " + cumulative);
+                }
+            }
+            System.out.println("");
+        }
+        solution.setObjectiveFunctionValue(objectiveFunctionValue);*/
+    }
+}
